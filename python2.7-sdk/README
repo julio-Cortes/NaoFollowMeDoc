@@ -1,0 +1,7 @@
+This revision contains some patches:
+
+add #include <boost/serialization/array_wrapper.hpp> added in include/boost/numeric/ublas/vector.hpp to fix error: 'make_array' is not a member of 'boost::serialization' in bfl
+
+also patched with https://github.com/boostorg/python/pull/159/files for libqi-python import qi issue
+
+config.cmake was added for boost_random

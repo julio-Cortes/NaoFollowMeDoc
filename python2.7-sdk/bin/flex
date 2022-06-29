@@ -1,0 +1,6 @@
+#!/bin/sh
+# Wrapper for flex tool
+
+BASEDIR=$(dirname $0)
+export M4="$BASEDIR/../../m4/bin/m4"
+exec $BASEDIR/flex_exe $@

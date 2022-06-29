@@ -1,0 +1,11 @@
+#!/bin/sh
+# Wrapper for bison tool
+
+BASEDIR=$(dirname $0)
+export BISON_PKGDATADIR="$BASEDIR/../data"
+export M4="$BASEDIR/../../m4/bin/m4"
+exec $BASEDIR/bison_exe $@
+
+
+
+
